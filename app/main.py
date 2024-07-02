@@ -6,8 +6,15 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from typing import Optional
+from sqlalchemy.orm import Session
+from models import Base, engine, user
+from database import get_db
+from pydantic import BaseModel
 
 app = FastAPI()
+
+# Create the database tables
+
 
 # Allow CORS for specific origins (such as your frontend URL)
 origins = [

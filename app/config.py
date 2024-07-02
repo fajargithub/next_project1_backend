@@ -1,0 +1,1 @@
+DATABASE_URL = "mysql+pymysql://username:password@localhost/next_project1_db"
